@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Shippori+Mincho+B1&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./styles/normalize.css">
+    <link rel="stylesheet" href="./styles/styles.css">
+    <title>RestHospital</title>
+</head>
+<body>
+        <header class="header ">
+           <h1 class="header--h1 no-margin no-padding"><a href="index.html">Hospital<span class="header--span">Primeros pasos al cielo</a></span></h1>
+        </header>
+        <main class="main">
+            <!-- contenedor de la información del hospital-->
+            <div class="contenedorHospital ">
+                <div class="contenedorHospital__uno">
+                    <h2 class="contenedorHospital__uno--h2 no-margin no-padding">Hospital primeros pasos al cielo</h2>
+                    <p class="contenedorHospital__uno--p no-margin no-padding">
+                        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Delectus, minima. Itaque consequuntur nihil quam modi natus odit aperiam, placeat, facilis impedit voluptate minus enim. Consectetur laudantium perferendis quam cupiditate dolore.
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae, harum atque rem repudiandae asperiores soluta esse labore veritatis, eveniet ullam voluptate, sequi laudantium nobis magni perferendis aut vitae quis facere?
+                    </p>
+                </div>
+                <!-- contenedor del login del hospital-->
+                <div class="contenedorHospital__dos">
+                    
+                    <form class="form">
+                        <h2 class="form--h2">Iniciar sesion</h2>
+                        <label class="form--label">nombre</label>
+                        <input class="form--input"  type="text" name="nombre" placeholder="nombre">
+                        <label class="form--label">contraseña</label>
+                        <input class="form--input"  type="text" name="contraseña" placeholder="contraseña">
+                        <button class="form--button" type="submit">
+                            Ingresar
+                        </button>
+                        <p class="form--p" id="mensaje"></p>      
+                    </form>
+                    <div class="crear__usuario">
+                        <a  class="crear__usuario--a" href="./usuarios/crear-usuarios.html">Crear usuario</a>
+                    </div>
+                </div>
+            </div>
+        </main>
+        <footer class="fotter">
+                <p class="fotter--p no-margin no-padding">Derechos reservados a<span class="fotter--span">Hospital Primeros pasos al cielo</span></p>
+        </footer>
+        <script src="./javascript.js/index.js"></script>
+        
+</body>
+</html>

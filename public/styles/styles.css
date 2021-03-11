@@ -1,0 +1,322 @@
+:root{
+    /* fuentes de texto */
+    --fuentetitulos: 'Shippori Mincho B1', serif ;
+    /*Paleta de colores*/
+    
+    --blanco: #fff;
+    --negro: #000;
+    --azul: #27f;
+    --azulOscuro: #00f;
+
+}
+/*globales*/
+html{
+    box-sizing: border-box;
+    font-size: 62.5%; /*conversion de 1 rem igual a 10px*/
+}
+*,*:after,*:after{
+    box-sizing: inherit;
+
+}
+body{
+    font-size: 1.6rem;
+    line-height: 2;   
+}
+/*Globales*/
+.contenedor{
+    max-width: 120rem;
+    width: 90%;
+    margin: 0 auto;
+}
+a{
+    text-decoration: none;
+}
+h1,h2,h3,h4{
+    font-family: var(--fuentetitulos);
+    line-height: 1.2;
+}
+h1{
+    font-size: 4.8rem;
+}
+h2{
+    font-size: 4rem;
+}
+h3{
+    font-size: 3.2rem;
+}
+h4{
+    font-size: 2.4rem;
+}
+img{
+    max-width: 100%;
+}
+/*Utilidades*/
+.no-margin{
+    margin: 0;
+}
+.no-padding{
+    padding: 0 ;
+}
+.centrar-texto{
+    text-align: center;
+}
+.contenedor a{
+    color: var(--blanco);
+}
+.boton{
+    display: block;
+    text-align: center;
+    padding: 1rem 2rem;
+    margin-bottom: 2rem;
+    font-family: var(--fuentetitulos);
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: 1.8rem;
+    border: 1px solid #999;
+}
+/* css de index */
+.header{
+    background-color: var(--azulOscuro);
+    width: 100%;
+    height: 10rem;
+    text-align: center;
+}
+.header--h1{
+    color: var(--blanco);
+    font-size: 5rem;
+    font-family: var(--fuentetitulos);
+    font-weight: 700;
+    letter-spacing: 1rem;
+    padding: 2rem;
+}
+header a{
+    color: var(--blanco);
+}
+.header--span{
+    font-size: 2rem;
+    font-family: var(--fuentetitulos);
+    font-weight: 400;
+    letter-spacing: normal;
+
+}
+.main{
+    background-image: url(../img/imagen-index.jpeg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 68.9rem;
+}
+.contenedorHospital{
+    display: grid;
+    gap: 1rem;
+    grid-template-columns: repeat(2,1fr);
+}
+.contenedorHospital__uno{
+    padding: 2rem;
+    text-align: center;
+}
+.contenedorHospital__uno--h2{
+    font-size: 4rem;
+    font-family: var(--fuentetitulos);
+    font-weight: 700;
+    margin-bottom:1rem;
+    padding: 1rem;
+}
+.contenedorHospital__uno--p{
+    font-size: 2rem;
+    font-family: var(--fuentetitulos);
+    font-weight: 400;
+}
+.contenedorHospital__dos{
+    padding: 2rem;
+}
+
+.form{
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+    background: var(--blanco);
+}
+.form--h2{
+    color: var(--azul);
+    text-align: center;
+}
+.form--h2{
+    font-size: 4rem;
+    font-family: var(--fuentetitulos);
+    font-weight: 700;
+}
+.form--label{
+    font-size: 2rem;
+    font-family: var(--fuentetitulos);
+    font-weight: 700;
+    color: var(--azul);
+    margin-bottom: 1rem;
+}
+.form--input{
+    border: 1px solid var(--azul);
+    padding: 1rem;
+    margin-bottom: 2rem;
+}
+.form--input::placeholder{
+    color: var(--negro);
+    font-size: 1.3rem;
+}
+.form--input:hover{
+    border: 1px solid var(--azulOscuro);
+
+}
+.form--button{
+    display: block;
+    text-align: center;
+    padding: 1rem 2rem;
+    margin-bottom: 2rem;
+    font-family: var(--fuentetitulos);
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: 1.8rem;
+    border: 1px solid #999;
+    background: var(--azul);
+    color: var(--blanco);
+}
+.form--button:hover{
+    cursor: pointer;
+    background: var(--azulOscuro);
+}
+.form--p{
+    font-family: var(--fuentetitulos);
+    font-size: 2rem;
+    font-weight: 400;
+    text-align: center;
+}
+.fotter{
+    background: var(--azulOscuro);
+    text-align: center;
+}
+.fotter--p{
+    font-size: 3rem;
+    font-family: var(--fuentetitulos);
+    font-weight: 700;
+    color: var(--blanco);
+}
+.fotter--span{
+    font-size: 2rem;
+    font-family: var(--fuentetitulos);
+    font-weight: 400;
+
+}
+.crear__usuario{
+    text-align: center;
+    padding: 1rem;
+}
+.crear__usuario--a{
+    font-size: 2rem;
+    font-family: var(--fuentetitulos);
+    font-weight: 400;
+    color: var(--azulOscuro);
+}
+/* css de crear usuario */
+.contenedor__crear{
+    padding: 4rem;
+}
+
+/* css para página paciente*/
+.header__paciente{
+    
+    text-align:center;
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap:2rem;
+}
+.header__paciente--principal{
+    font-size: 5rem;
+    font-family: var(--fuentetitulos);
+    color: var(--blanco);
+    letter-spacing: 2rem;
+    font-weight: 700;
+}
+.header__paciente--p{
+    font-size: 2rem;
+    font-family: var(--fuentetitulos);
+    font-weight: 400;
+    text-transform: uppercase;
+    padding: 1rem;
+    margin-left: -5rem;
+}
+.icono{
+    display: flex;
+    justify-content: space-evenly;
+    color: var(--blanco);
+}
+.icono__uno{
+    margin-top: 1.5rem;
+    margin-left: 2rem;
+}
+.icono__dos{
+    margin-top: -1rem;
+    display: flex;
+    flex-direction: column;
+    
+}
+/* main de la página paciente*/
+.main__citas{
+    height: 100%;
+}
+.pacientes{
+    padding: 3rem;
+    display: flex;
+    gap: 2rem;
+    flex-direction: column;
+}
+.paciente{
+    background-color: var(--blanco);
+    padding: 2rem;
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    grid-template-rows: repeat(4,1fr);
+    gap: 1rem;
+    text-align: center;
+    border: 1px solid var(--negro);
+}
+.paciente__cita,.paciente__usuario,.paciente__citas,.paciente__nombreUsuario{
+    grid-column: 1/3;
+}
+.paciente__nombreUsuario{
+    grid-row: 3/4;
+}
+
+.agregar__noveda{
+    display: flex;
+    justify-content: space-evenly;
+}
+.boton{
+    background-color: var(--azulOscuro);
+    color: var(--blanco);
+}
+.barra{
+    width: 40rem;
+    padding: 1rem;
+    border: 1px solid var(--azulOscuro);
+}
+/* generar cita */
+.generar__cita{
+    display: flex;
+    justify-content: space-evenly;
+}
+.generar__texto,.generar__boton{
+    padding: 1rem;
+    
+}
+.texto{
+    border: 1px solid var(--azul);
+    padding: 1rem;
+    width: 30rem;
+    transition: 1s;
+}
+.texto:hover{
+    border: 1px solid var(--azulOscuro);
+    padding: 2rem;
+    width: 50rem;
+    transition: 1s;
+}
+
