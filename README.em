@@ -1,6 +1,6 @@
 para ejecutar la aplicación
 
-inicializar npm init para instalar los modulos de node
+inicializar npm install para instalar los modulos de node
 
 abrimos la ventana de comando nos posicionamos en la carpeta del proyecto y ejecutamos 
 nodemon app.js o también npm node app 
